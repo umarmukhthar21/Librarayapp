@@ -1,0 +1,52 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/addbook']" routerLinkActive="active">Add Book
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Logout</a>
+            </li>
+           
+        </ul>
+    </div>
+  </nav>
+ 
+
+<div class="card-body">
+    <div class="table-responsive">
+
+   <button type="submit" value="Submit" (click)="getlibraryList()">load</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>ISBN Number</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let library of libraryList">
+                           <td>{{library.bookName}}</td>
+                           <td>{{library.Author}}</td>
+                           <td>{{library.IsbnNumber}}</td>
+                           <td>{{library.price}}</td>
+                           <td>{{library.rating}}</td>
+                        </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
