@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/bookhome']" routerLinkActive="active">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/login']" routerLinkActive="active">Logout</a>
+            </li>
+           
+        </ul>
+    </div>
+  </nav>
+
+
+
+
+<div class="card">
+    <form >
+        <!-- Header -->
+        
+
+        <!-- Body -->
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Book Name</td>
+                            <td><input type="text" name="p_code" ></td>
+                        </tr>
+                        <tr>
+                            <td>Author</td>
+                            <td><input type="text" name="p_name" ></td>
+                        </tr>
+                        <tr>
+                            <td>ISBN Number</td>
+                            <td><input type="number" name="p_availability" ></td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td><input type="text" name="p_price" ></td>
+                        </tr>
+                        <tr>
+                            <td>Star Rating</td>
+                            <td><input type="number" name="p_rating" ></td>
+                        </tr>
+                       
+                        <tr>
+                            <td><input type="submit" value="Submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
